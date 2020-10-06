@@ -26,8 +26,14 @@
     transform: translateX(0);
     transform: translate3d(0, 0, 0);
    }
-   .carousel-caption {
-    background-color: rgba(10,94,164,1);    
+   /*background-color: rgba(10,94,164,1);
+   .navbar {
+      background-color: rgba(164,28,10,0.8);      
+  }
+   */
+    .carousel-caption {
+    background-color: white; 
+    color: black;   
     position: relative;
     left: 0;
     top: 0;
@@ -36,9 +42,18 @@
     .carousel-caption p {
         padding: 0 20% 0 20%;
     }
-    .carousel-indicators {
+    .carousel-indicators {        
         margin: 0;
     }
+    .carousel-indicators li {
+        background-color: #999;
+        background-color: rgba(70, 70, 70, 0.25);
+        
+      }
+      
+      .carousel-indicators .active {
+        background-color: rgba(10,94,164,1);
+      }
 }
 /* adding navbar */       
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
@@ -75,11 +90,12 @@
     color: #fff;
   }
   .navbar {
-      background-color: rgba(164,28,10,0.8);      
+    background-color: rgba(10,94,164,0.8);      
   }
   .navbar a {
       color:white;
-      font-size: 20px;
+      font-size: 16px;      
+      font-weight: 500;
   }
   /* ignore the code below */
   .navbar .imgBrand {
@@ -127,7 +143,11 @@
   
   @media (min-width: 768px) and (max-width: 1024px) {
     
-    //CSS
+    .navbar a {
+        color:white;
+        font-size: 12px;
+        font-weight: 400;
+    }
     
   }
   
@@ -138,7 +158,9 @@
   
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
-    //CSS
+    .carousel-caption p {
+        padding: 0 5% 0 5%;
+    }
     
   }
   
@@ -149,7 +171,9 @@
   
   @media (min-width: 481px) and (max-width: 767px) {
     
-    //CSS
+    .carousel-caption p {
+        padding: 0 5% 0 5%;
+    }
     
   }
   
@@ -160,7 +184,9 @@
   
   @media (min-width: 320px) and (max-width: 480px) {
     
-    //CSS
+    .carousel-caption p {
+        padding: 0 5% 0 5%;
+    }
     
   }
    
